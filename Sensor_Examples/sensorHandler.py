@@ -3,8 +3,7 @@ from BrickPi import *
 def scan():
 	result = BrickPiUpdateValues()
 	if not(result):
-		#gyro = BrickPi.Sensor[PORT_4]
-		gyro = 100
+		gyro = BrickPi.Sensor[PORT_4]
 		return gyro
 
 def verifyDistance(dist):
